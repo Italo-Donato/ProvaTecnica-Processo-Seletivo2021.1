@@ -18,7 +18,7 @@ class TravelProvider implements ITravelProvider{
     async executeTravel(universePosition:SpacePoint): Promise<void> {
         console.log("Verify Coordinates...");
         if(this.checkCoordinates(universePosition, this.universePosition)){
-            this.consoleLogWithTimeOut("Checking Space Time..", 1500);
+            this.consoleLogWithTimeOut("Checking Space Time..", 0);
             this.consoleLogWithTimeOut("Checking Time Balance..", 3000);
             this.consoleLogWithTimeOut("Checking Time Differential..", 4500);
             this.consoleLogWithTimeOut("All right for time travel\n\nSynchronizing pulsars", 6000);
@@ -33,7 +33,7 @@ class TravelProvider implements ITravelProvider{
             this.consoleLogWithTimeOut("******* SHUT DOWN... ********",13000);
 
         }else{
-            this.consoleLogWithTimeOut("Checking Space Time..", 1500);
+            this.consoleLogWithTimeOut("Checking Space Time..", 0);
             this.consoleLogWithTimeOut("Checking Time Balance..", 3000);
             this.consoleLogWithTimeOut("Checking Time Differential..", 4500);
             this.consoleLogWithTimeOut("All right for time travel\n\nSynchronizing pulsars", 6000);
